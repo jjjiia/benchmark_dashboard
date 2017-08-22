@@ -1,0 +1,40 @@
+body{
+	font-family:"helvetica";
+ font-size:18px;
+    
+}
+a{
+	color:#dc3a23;
+}
+#title-info{
+    font-size:24px;
+    padding:20px;
+    line-height:120%;
+}
+ #container{
+	 padding:5px;
+	 width:100%;
+	 position:absolute;
+	 left:20px;
+ }
+ .row{
+	 padding:10px;
+     color:#000;
+ }
+ .chartGroupTitle{
+	 font-size:24px;
+	 border-bottom: dotted 1px #aaa;
+	 padding-bottom:5px;
+     color: #aaa;
+	 letter-spacing:1px;
+ }
+ .chart-title{
+	 color:#000;     
+ }
+ table, td {
+     margin-right:10px;
+     border:1px solid black;
+ }
+ .dc-chart .bubble {
+     fill-opacity: 0.05;
+ }

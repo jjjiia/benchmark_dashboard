@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	  <meta charset="UTF-8">
+    <title>benchmark test</title>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/dc.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+    <style>
+        #monthly-volume-chart g.y {
+            display: none;
+        }
+    </style>
+	<script language="javascript" type="text/javascript">
+	function showHide(shID) {
+	   if (document.getElementById(shID)) {
+	      if (document.getElementById(shID+'-show').style.display != 'none') {
+	         document.getElementById(shID+'-show').style.display = 'none';
+	         document.getElementById(shID).style.display = 'block';
+	      }
+	      else {
+	         document.getElementById(shID+'-show').style.display = 'inline';
+	         document.getElementById(shID).style.display = 'none';
+	      }
+	   }
+	}
+	</script>
+</head>
+
+<body>
+
+
+<div id = "title-info"></div>
+<div id="container">
+<div class="row">	
+      <div class="dc-data-count">
+          <span class="filter-count"></span> selected out of <span class="total-count"></span> records | <a
+              href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
+      </div>
+</div>
+
+<div class="row" id = "row1">	</div>
+<div class="row" id = "row2">	</div>
+
+</div>
+
+<script type="text/javascript" src="js/d3.js"></script>
+<script type="text/javascript" src="js/crossfilter.js"></script>
+<script type="text/javascript" src="js/dc.js"></script>
+<script type="text/javascript" src="js/colorbrewer.js"></script>
+<script type="text/javascript" src="js/queue.v1.min.js"></script>
+
+<script type="text/javascript" src="index.js"></script>
+
+
+</body>
+</html>
